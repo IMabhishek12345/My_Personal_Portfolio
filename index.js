@@ -11,3 +11,11 @@ const handletabTitles=(id)=>{
   event.currentTarget.classList.add("active-link");
   document.getElementById(id).classList.add("active-tab");
 }
+
+let sidemenu=document.getElementById("sidemenu");
+const openmenu=()=>{
+  sidemenu.style.right="0";
+}
+const closemenu=()=>{
+  sidemenu.style.right="-200px";
+}

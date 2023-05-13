@@ -16,13 +16,15 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" alt="" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Full Stack developer</p>
@@ -143,46 +145,84 @@
     <!-- ----------Portfolio---------------------->
     <div id="portfolio">
       <div class="container">
-        <h1 class="subtitle">My Portfolio</h1>
+        <h1 class="subtitle">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="images/work-1.png" alt="work1"> 
+            <img src="images/work-1.png" alt="work1" />
             <div class="layer">
-              <h3>E-commerce App </h3>
-               <p>lets you to buy different product from these app with user
-                authentication handled by firebase and payment gateway functionality
-                of stripe.js  
-               </p>
-               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+              <h3>E-commerce App</h3>
+              <p>
+                lets you to buy different product from these app with user
+                authentication handled by firebase and payment gateway
+                functionality of stripe.js
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png" alt="work2">
-             <div class="layer">
-              <h3>Disney-clone App </h3>
-               <p>lets you to visit different movies,  with user
-                authentication handled by firebase with react-redux
-                for handling user state
-               </p> 
-               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-              </div>
+            <img src="images/work-2.png" alt="work2" />
+            <div class="layer">
+              <h3>Disney-clone App</h3>
+              <p>
+                lets you to visit different movies, with user authentication
+                handled by firebase with react-redux for handling user state
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
           </div>
           <div class="work">
-            <img src="images/work-3.png" alt="work3">
+            <img src="images/work-3.png" alt="work3" />
             <div class="layer">
-            <h3>Note making App </h3>
-            <p>lets you to buy different product from these app with user
-             authentication handled by firebase and payment gateway functionality
-             of stripe.js  
-            </p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+              <h3>Note making App</h3>
+              <p>
+                lets you to buy different product from these app with user
+                authentication handled by firebase and payment gateway
+                functionality of stripe.js
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
           </div>
         </div>
+        <a class="btn" href="">See more</a>
       </div>
     </div>
 
-
-    <script src="index.js"></script>
+  <!----------------------Contact------------------------------>
+   <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>abhishek.pokhriyal8@gmail.com</p>
+           <p><i class="fa-brands fa-whatsapp"></i>9560799357</p>
+           <div class="social-icons">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+           </div>
+           <a href="images/my-cv.pdf" download class="btn btn-left">Download Resume</a>
+        </div>
+        <div class="contact-right">
+           <form >
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+             <button class="btn btn-left" type="submit">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+     <div class="copyright">
+      <p>copyright © Abhishek made by me</p>
+     </div> 
+  </div>  
+  
+  <script src="index.js"></script>
   </body>
 </html>
